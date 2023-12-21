@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA Color Generator</title>
+</head>
+<body>
+    <h1>RGBA Color Generator</h1>
+
+    <label for="colorInput">Enter color code (e.g., 00a3ff):</label>
+    <input type="text" id="colorInput" placeholder="Enter color code">
+
+    <label for="alphaInput">Enter alpha value (between 0 and 1):</label>
+    <input type="number" id="alphaInput" step="0.01" min="0" max="1" placeholder="Enter alpha value">
+
+    <button onclick="generateRGBA()">Generate RGBA Color</button>
+
+    <div id="result"></div>
+
+    <script>
+        function generateRGBA() {
+            const colorInput = document.getElementById('colorInput').value;
+            const alphaInput = parseFloat(document.getElementById('alphaInput').value);
+
+            if (!isValidColorCode(colorInput) || isNaN(alphaInput) || alphaInput < 0 || alphaInput > 1) {
+                document.getElementById('result').innerHTML = 'Invalid input';
+                return;
+            }
+
+            const rgbValues = hexToRgb(colorInput);
+
+            const rgbaColor = `rgba(${rgbValues.r}, ${rgbValues.g}, ${rgbValues.b}, ${alphaInput})`;
+            document.getElementById('result').innerHTML = `Generated RGBA Color: ${rgbaColor}`;
+        }
+
+        function isValidColorCode(colorCode) {
+            const colorCodeRegex = /^([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+            return colorCodeRegex.test(colorCode);
+        }
+
+        function hexToRgb(hex) {
+            // Expand shorthand form (e.g., "00a3ff" to "0000a3ff")
+            const expandedHex = hex.length === 3 ? hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2] : hex;
+            
+            // Parse hex values
+            const bigint = parseInt(expandedHex, 16);
+
+            // Extract RGB components
+            const r = (bigint >> 16) & 255;
+            const g = (bigint >> 8) & 255;
+            const b = bigint & 255;
+
+            return { r, g, b };
+        }
+    </script>
+</body>
+</html>

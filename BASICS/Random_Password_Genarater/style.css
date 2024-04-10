@@ -1,0 +1,90 @@
+body{
+
+  font-family: 'Droid Sans Mono', monospace;
+  color: rgb(14, 231, 231);
+  background-image: url(back.jpg);
+  background-repeat:round;
+
+}
+H1{
+  font-size: 4em;
+}
+h1:hover {
+  animation: shine 1s infinite;
+  
+}
+
+@keyframes shine {
+  0% { color: red; }
+  50% { color: #1fd4ec; }
+  100% { color: red; }
+}
+
+
+/* Apply padding to the form */
+form {
+  padding: 20px; /* Adjust as needed */
+  text-align: center;
+}
+#length{
+  padding: 10px 10px 10px 10px;
+  color: brown;
+  font-size: larger;
+}
+/* Apply padding to the labels */
+label {
+  padding-right: 10px; /* Adjust as needed */
+
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* Apply padding to the checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px; /* Adjust as needed */
+  margin-top: 50px;
+  width: 20px; /* Adjust width */
+  height: 20px; /* Adjust height */
+}
+
+/* Apply padding to the button */
+button {
+  padding: 10px 20px; /* Adjust as needed */
+  margin-top: 50px;
+  cursor: pointer;
+  background-color: brown;
+  font-size: large;
+  color: aqua;
+}
+button:hover{
+  background-color: aqua;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+#passwordResult{
+  font-size: 2em;
+  
+}
+
+#passwordResult:hover {
+  animation: shine 1s infinite;
+  
+}
+
+@keyframes shine {
+  0% { color: red; }
+  50% { color: #1fd4ec; }
+  100% { color: red; }
+}
+
+
+
+
+/* Apply padding to the result paragraph */
+#passwordResult {
+  padding-top: 10px; /* Adjust as needed */
+}

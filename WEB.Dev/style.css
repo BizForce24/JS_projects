@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 15%;
+  padding: 1%;
 
 }
 form{
@@ -91,8 +91,7 @@ font-size:2.5em;
 
 .form-group {
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  
 }
 .form-group label {
   width: 100%;

@@ -1,2 +1,139 @@
 
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 15%;
+
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px  rgb(151, 155, 158);
+  background-color: #243C55;
+
+}
+.left-column {
+  width: 40%;
+  height:100%;
+  padding: 20px;
+  background-color: #243C55;
+  color: white;
+  text-align: center;
+ 
+  
+}
+.left-column h2{
+font-weight: bolder;
+font-size:2.5em;
+
+}
+
+.left-column .btn{
+  height:30px;
+  width: 131px;
+  background-color: white;
+  box-shadow: 5px 5px rgb(196, 196, 196);
+  border: none;
+  font: size 16px; 
+  font:weigh bolder;
+  color: #243C55;
+
+
+ 
+  
+  }
+  .checkbox-text{
+    color: #243C55;
+    font-weight: bolder;
+  }
+
+.lefet-column-content{
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+/* right collumn start */
+.right-column {
+  height:55%;
+  width: 65%;
+  padding: 30px;
+  background-color:#FFFFFF
+}
+.right-column h2{
+  text-align: center;
+  color:#243C55;
+  font-size: 2.5em;
+  font-weight: bolder;
+  
+}
+
+.right-column p{
+  text-align: center;
+
+  color:#243C55;
+  padding: 0%;
+  margin-top: 0.5em;
+
+}
+
+
+
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-group label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form-group input {
+  flex: 1;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #243C55;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.Register-button {
+  text-align: center;
+  height: 40px;
+  width: 302px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30%; /* Add margin-left: auto */
+  margin-right: auto; /* Add margin-right: auto */
+  background-color: #243C55;
+  color: white;
+}
+
+
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #f2f2f2; /* ash color */
+}
+
+.custom-file-upload:hover {
+  background-color: #d9d9d9;
+}

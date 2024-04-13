@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+
+<div class="container">
+  <form >
+    <div class="left-column">
+      <div class="lefet-column-content">
+        <h2>Welcome <br>Back!</h2>
+        <p>To keep connected with us please
+          with your personal info</p>
+        <button class="btn">Login</button>
+
+      </div>
+        <!-- registraion form start -->
+    </div>
+    <div class="right-column">
+        <form action="#" method="post">
+          <h2>Create Your account</h2>
+          <p><span class="subhed">Set up your details</span></p>
+            <div class="form-group">
+              <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+              <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+
+              <input type="text" id="number" name="number" required placeholder="Enter your Contact Number">
+              <input type="text" id="addres" name="addres" required placeholder="Enter your Address"><br>
+
+              <div class="upload">
+                <label for="fileInput">Upload your profile picture:</label>
+                <input type="file" id="fileInput" class="custom-file-upload" onchange="handleFileUpload()">
+                
+              </div>
+
+              <input type="password" id="pwd" name="pwd" required placeholder="Password">
+
+
+              <input type="text" id="number" name="number" required placeholder="Confirm password"><br>
+              
+            </div>
+            <input type="checkbox" id="checkbox"  required>
+            <lebel class="checkbox-text">Accept our terms and conditions</lebel><br>
+
+           
+         
+                <button class="Register-button" type="submit" class="btn">Register</button>
+            
+        </form>
+    </div>
+  </form>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

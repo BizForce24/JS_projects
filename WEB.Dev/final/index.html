@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in || Sign up from</title>
+     <!-- font awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+  <!-- register form start -->
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+              <h2>Create Your account</h2>
+              <p><span class="subhed">Set up your details</span></p>
+                <div class="form-group">
+                  <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+                  <input type="text" id="lname" name="lname" required placeholder="Enter your last name"><br>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+    
+                  <input type="text" id="number" name="number" required placeholder="Enter your Contact Number"><br>
+                  <input type="text" id="addres" name="addres" required placeholder="Enter your Address">
+    
+                  <div class="upload">
+                    <label for="fileInput">Upload your profile picture:</label>
+                    <input type="file" id="fileInput" class="custom-file-upload" onchange="handleFileUpload()">
+                    
+                  </div>
+                  <input type="password" id="pwd" name="pwd" required placeholder="Password">
+                  <input type="password" id="pwd" name="pwd" required placeholder="Confirm Password"><br>
+                  <input type="checkbox" id="checkbox"  required>
+            <lebel class="checkbox-text">Accept our terms and conditions</lebel><br>
+
+
+                <button>Register</button>
+            </form>
+        </div>
+
+
+
+
+
+        <!-- login form start -->
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login to Your account</h1>
+               
+                <span>Welcome back
+                  Glad to see you again!</span>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <button>Login</button><br>
+                <a href="#" class="forgot">Forgot your password?</a><br>
+            
+            </form>
+        </div>
+
+
+        <!-- register form content start -->
+
+          
+
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button>Login</button>
+                </div>
+
+
+
+            <!-- login form content start -->
+
+
+                <div class="overlay-panel overlay-right">
+                    <h1>New Here</h1>
+                    <p>Sign up and discover a great
+                      amount of new fashion!</p>
+                    <button>Register</button>
+                </div>
+            </div>
+            <button id="overlayBtn"></button>
+        </div>
+    </div>
+
+  
+    
+    <!-- js code -->
+    <script>
+
+    </script>
+
+</body>
+</html>

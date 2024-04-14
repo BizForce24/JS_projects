@@ -1,0 +1,90 @@
+body{
+
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.border {
+  display: flex;
+  box-shadow: 10px 10px rgba(114, 115, 116, 0.521);
+  padding: 0px; /* Adding padding */
+  height:60%;
+  width: 60%;
+  
+}
+
+.left-collumn{
+ width: 60%;
+ background-color: #243C55;
+text-align: center;
+}
+
+.left-collumn h1{
+  text-align: center;
+  font-size: 36px;
+  color: white;
+
+}
+.left-collumn p{
+  text-align: center;
+  color: white;
+}
+
+.left-collumn input{
+  padding: 0.5em;
+  margin-top: 4%;
+  width: 60%;
+  
+}
+.left-collumn .login-btn{
+  margin-top: 10%;
+  padding: 5px 100px 5px 100px;
+  font-size:16px ;
+  box-shadow: 7px 7px rgb(190, 190, 190);
+  border: none;
+}
+
+
+
+/* right collumn */
+
+
+.right-collumn{
+  width: 40%;
+ text-align: center;
+
+}
+
+.right-collumn h1{
+ text-align: center;
+  font-size: 36px;
+  color: #243C55;
+  margin-top: 40%;
+
+
+}
+
+.right-collumn p{
+  color: #243C55;
+
+}
+
+.right-collumn .Register-btn{
+  text-align: center;
+  height: 40px;
+  width: 302px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #243C55;
+  color: white;
+}
+  
+

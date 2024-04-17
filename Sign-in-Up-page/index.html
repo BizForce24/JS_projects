@@ -11,55 +11,103 @@
 
 <body>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site features</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container go-register">
+    <!-- Login Form Starts -->
+    <div class="form__container form__container-login">
+      <form action="" class="form">
+          <div class="left-column">
+              <h1>Login your Account</h1>
+              <p>Welcome back<br>Glad to see you again!</p>
+              <input type="text" id="username" placeholder="Enter your Email or User name"> <br>
+              <input type="password" id="pwd" placeholder="Enter your password"><br>
+              <button class="login-btn" id="loginRegisterBtn" type="submit">Login</button><br>
+              <a><p>Forgot Password ?</p></a>
+          </div>
+      </form>
+  </div>
+  
 
+
+
+
+
+
+    <!-- Login Form Ends -->
+
+
+    <!-- Register Form Starts -->
+
+
+    
+    <div class="form__container form__container-register">
+      <form action="" class="form">
+        <div class="right-column">
+          <h2>Create Your Account</h2>
+          <p><span class="subhed">Set up your details</span></p>
+          <div class="form-group">
+            <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+            <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+            <br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="text" id="number" name="number" required placeholder="Enter your Contact Number">
+            <input type="text" id="addres" name="addres" required placeholder="Enter your Address">
+            <br>
+            <div class="upload">
+              <label for="fileInput">Upload your profile picture:</label>
+              <input type="file" id="fileInput" class="custom-file-upload" onchange="handleFileUpload()">
+            </div>
+            <input type="password" id="pwd" name="pwd" required placeholder="Password">
+            <input type="password" id="confirmPwd" name="confirmPwd" required placeholder="Confirm password">
+          </div>
+          <div class="chekckbox">
+            <input type="checkbox" id="checkbox" required>
+            <label class="checkbox-text">Accept our terms and conditions</label>
+            <br>
+          </div>
+         
+          <button class="Register-button" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Register Form Ends -->
+    <!-- Overlay container Starts -->
+    <div class="overlay-container">
+        <!-- Right Overlay Starts -->
+        <div class="overlay overlay--right">
+            <h3 class="overlay__heading">New Here</h3>
+            <p class="overlay__desc">Sign up and discover a great<br>
+              amount of new fashion!s</p>
+            <button type="button" id="go-register" class="btn btn--main-outline">Sign Up</button>
+        </div>
+
+
+
+        <!-- Right Overlay Ends -->
+        <!-- Left Overlay Starts -->
+        <div class="overlay overlay--left">
+            <h3 class="overlay__heading">Welcome Back!</h3>
+            <p class="overlay__desc">To keep connected with us please with your personal info
+
+</p>
+            <button type="button" id="go-login" class="btn btn--main-outline">Login</button>
+        </div>
+        <!-- Left Overlay Ends -->
+    </div>
+    <!-- Overlay Container Ends -->
+</div>
     <script src="index.js"></script>
 </body>
 

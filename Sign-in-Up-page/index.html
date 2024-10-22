@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+  <div class="container go-register">
+    <!-- Login Form Starts -->
+    <div class="form__container form__container-login">
+      <form action="" class="form">
+          <div class="left-column">
+              <h1>Login your Account</h1>
+              <p>Welcome back<br>Glad to see you again!</p>
+              <input type="text" id="username" placeholder="Enter your Email or User name"> <br>
+              <input type="password" id="pwd" placeholder="Enter your password"><br>
+              <button class="login-btn" id="loginRegisterBtn" type="submit">Login</button><br>
+              <a><p>Forgot Password ?</p></a>
+          </div>
+      </form>
+  </div>
+  
+
+
+
+
+
+
+    <!-- Login Form Ends -->
+
+
+    <!-- Register Form Starts -->
+
+
+    
+    <div class="form__container form__container-register">
+      <form action="" class="form">
+        <div class="right-column">
+          <h2>Create Your Account</h2>
+          <p><span class="subhed">Set up your details</span></p>
+          <div class="form-group">
+            <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+            <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+            <br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="text" id="number" name="number" required placeholder="Enter your Contact Number">
+            <input type="text" id="addres" name="addres" required placeholder="Enter your Address">
+            <br>
+            <div class="upload">
+              <label for="fileInput">Upload your profile picture:</label>
+              <input type="file" id="fileInput" class="custom-file-upload" onchange="handleFileUpload()">
+            </div>
+            <input type="password" id="pwd" name="pwd" required placeholder="Password">
+            <input type="password" id="confirmPwd" name="confirmPwd" required placeholder="Confirm password">
+          </div>
+          <div class="chekckbox">
+            <input type="checkbox" id="checkbox" required>
+            <label class="checkbox-text">Accept our terms and conditions</label>
+            <br>
+          </div>
+         
+          <button class="Register-button" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Register Form Ends -->
+    <!-- Overlay container Starts -->
+    <div class="overlay-container">
+        <!-- Right Overlay Starts -->
+        <div class="overlay overlay--right">
+            <h3 class="overlay__heading">New Here</h3>
+            <p class="overlay__desc">Sign up and discover a great<br>
+              amount of new fashion!s</p>
+            <button type="button" id="go-register" class="btn btn--main-outline">Sign Up</button>
+        </div>
+
+
+
+        <!-- Right Overlay Ends -->
+        <!-- Left Overlay Starts -->
+        <div class="overlay overlay--left">
+            <h3 class="overlay__heading">Welcome Back!</h3>
+            <p class="overlay__desc">To keep connected with us please with your personal info
+
+</p>
+            <button type="button" id="go-login" class="btn btn--main-outline">Login</button>
+        </div>
+        <!-- Left Overlay Ends -->
+    </div>
+    <!-- Overlay Container Ends -->
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>

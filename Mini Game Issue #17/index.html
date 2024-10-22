@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guess" min="1" max="100" />
+    <button onclick="checkGuess()">Submit Guess</button>
+    <div id="result"></div>
+    <button id="restart" style="display:none;" onclick="restartGame()">Restart Game</button>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            const userGuess = Number(document.getElementById('guess').value);
+            const result = document.getElementById('result');
+            attempts++;
+
+            if (userGuess < 1 || userGuess > 100) {
+                result.textContent = "Please enter a number between 1 and 100.";
+                return;
+            }
+
+            if (userGuess === randomNumber) {
+                result.textContent = `Congratulations! You guessed the number ${randomNumber} in ${attempts} attempts!`;
+                document.getElementById('restart').style.display = 'block';
+            } else if (userGuess < randomNumber) {
+                result.textContent = "Too low! Try again.";
+            } else {
+                result.textContent = "Too high! Try again.";
+            }
+
+            document.getElementById('guess').value = '';
+        }
+
+        function restartGame() {
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            document.getElementById('result').textContent = '';
+            document.getElementById('restart').style.display = 'none';
+            document.getElementById('guess').value = '';
+        }
+    </script>
+
+</body>
+</html>
